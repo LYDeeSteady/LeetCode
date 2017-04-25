@@ -10,7 +10,8 @@ class Solution {
                 ans = Math.max(ans, j - i);
             }
             else {
-                set.remove(s.charAt(i++));
+                set.remove(s.charAt(i));
+                i = i+1;
             }
         }
         return ans;
